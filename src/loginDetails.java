@@ -3,6 +3,7 @@ public class loginDetails{
     private static String passWord;
     loginDetails(){
         System.out.println("Login Details");
+        System.out.println("Updated code");
     }
     public void setUserName(String userName){
         this.userName = userName;
