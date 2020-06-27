@@ -1,24 +1,25 @@
 import java.util.*;
+
 import static java.lang.System.*;
 
 public class Main {
-    public static Draw d = new Draw();
+
     public static void main(String[] args) {
+
         loginpage();// bank login page
-        var abhi = new BankAccount();// homepage
+        // homepage
         // checkings
         // savings
         // withdraw
     }
     public static void loginpage() {
-
         out.println("___________ WELCOME TO APPLE BANK______________");
-        d.doubleLine();
+        printDouble();
         out.println("SELECT THE FOLLOWING");
-        d.singleLine();
+        printSingle();
         out.println("1.LOGIN");
         out.println("2.SIGNUP");
-        d.doubleLine();
+        printDouble();
         out.println("ENTER CHOICE : ");
         Scanner sc = new Scanner(in);
         boolean flag = false;
@@ -30,15 +31,23 @@ public class Main {
                 out.println("Check your input");
             }
             if (input == 1) {
-                var loginPage = new login(); //login
+                printSingle();
+                out.println("login page");//login
                 flag = true;
             } else if (input == 2) {
-                var signup = new login(true); //signup
+                printSingle();
+                out.println("Sign up page");//signin
                 flag = true;
             } else {
                 out.println("Invalid input");
                 flag = false;
             }
         }
+    }
+    public static void printDouble(){
+        out.println("===========================================");
+    }
+    public static void printSingle(){
+        out.println("--------------------------------------------");
     }
 }
