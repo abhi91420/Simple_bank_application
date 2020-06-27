@@ -24,6 +24,10 @@ public class BankAccount {
         this.accountBalance +=depositAmount;
     }
     public void withdraw(long withdrawAmount){
-        this.accountBalance -= withdrawAmount;
+        try{
+        this.accountBalance -= withdrawAmount;}
+        catch (Exception e){
+            e.printStackTrace();
+        }
     }
 }
