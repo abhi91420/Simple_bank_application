@@ -2,7 +2,7 @@
 
 Its a simple banking application using java
 
-Displayin the use of OOPS concepts such as -
+Displaying the use of OOPS concepts such as -
 
 1.Polymorphism
 
